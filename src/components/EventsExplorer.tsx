@@ -3,7 +3,7 @@ import '@fortawesome/fontawesome-free/css/all.css'
 import profileImg from '../assets/profile.png'
 import Event from './Event'
 
-export default function EventsExplorer() {
+export default function EventsExplorer({ onBack }: { onBack?: () => void }) {
     const [selectedEvent, setSelectedEvent] = useState<typeof events[0] | null>(null)
     const [viewingEvent, setViewingEvent] = useState<typeof events[0] | null>(null)
     const [dropdownOpen, setDropdownOpen] = useState<number | null>(null)
@@ -86,7 +86,7 @@ export default function EventsExplorer() {
                 <div className="flex items-center justify-between">
                     {/* Left Section */}
                     <div className="flex items-center gap-2">
-                        <i className="fas fa-arrow-left text-white text-lg hover:opacity-80 cursor-pointer"></i>
+                        <i className="fas fa-arrow-left text-white text-lg hover:opacity-80 cursor-pointer" onClick={onBack}></i>
                         <span className="text-sm font-semibold text-white">History Contextual Explorer</span>
                     </div>
                     

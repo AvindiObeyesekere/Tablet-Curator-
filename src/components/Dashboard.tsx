@@ -68,7 +68,7 @@ export default function Dashboard() {
     return (
         <>
             {currentScreen === 'events' ? (
-                <EventsExplorer />
+                <EventsExplorer onBack={() => setCurrentScreen('dashboard')} />
             ) : (
                 <div className="fixed inset-0 flex flex-col bg-blue-100">
             {/* Header */}
