@@ -80,7 +80,7 @@ export default function EventsExplorer() {
                         onClick={() => setDropdownOpen(null)}
                     />
                 )}
-                <div className="flex flex-col w-screen bg-gray-100" style={{ height: '100vh' }}>
+                <div className="flex flex-col w-full h-full bg-gray-100 overflow-hidden">
             {/* Blue Header Band */}
             <header className="bg-gradient-to-r from-blue-600 to-blue-700 px-6 py-3 flex-shrink-0 shadow-md">
                 <div className="flex items-center justify-between">
