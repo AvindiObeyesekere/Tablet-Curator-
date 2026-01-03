@@ -86,7 +86,7 @@ export default function EventsExplorer({ onBack }: { onBack?: () => void }) {
                 <div className="flex items-center justify-between">
                     {/* Left Section */}
                     <div className="flex items-center gap-2">
-                        <i className="fas fa-arrow-left text-white text-lg hover:opacity-80 cursor-pointer" onClick={onBack}></i>
+                        <i className="fas fa-arrow-left text-white text-lg hover:opacity-80 cursor-pointer" onClick={() => onBack?.()}></i>
                         <span className="text-sm font-semibold text-white">History Contextual Explorer</span>
                     </div>
                     
