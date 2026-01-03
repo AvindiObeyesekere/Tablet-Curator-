@@ -80,7 +80,7 @@ export default function EventsExplorer() {
                         onClick={() => setDropdownOpen(null)}
                     />
                 )}
-                <div className="flex flex-col h-screen w-screen bg-gray-100">
+                <div className="flex flex-col w-screen bg-gray-100" style={{ height: '100vh' }}>
             {/* Blue Header Band */}
             <header className="bg-gradient-to-r from-blue-600 to-blue-700 px-6 py-3 flex-shrink-0 shadow-md">
                 <div className="flex items-center justify-between">
@@ -142,7 +142,7 @@ export default function EventsExplorer() {
             </div>
 
             {/* Events List */}
-            <main className="flex-1 overflow-y-auto px-6 py-4">
+            <main className="flex-1 overflow-y-auto min-h-0 px-6 py-4">
                 <div className="space-y-3">
                     {events.map((event) => (
                         <div
@@ -262,7 +262,7 @@ export default function EventsExplorer() {
             </main>
 
             {/* Bottom Navigation */}
-            <nav className="bg-white border-t border-gray-200 flex-shrink-0">
+            <nav className="bg-white border-t border-gray-200 flex-shrink-0 w-full">
                 <div className="flex justify-around">
                     {bottomNav.map((item, index) => (
                         <button
