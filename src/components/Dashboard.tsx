@@ -70,7 +70,7 @@ export default function Dashboard() {
             {currentScreen === 'events' ? (
                 <EventsExplorer />
             ) : (
-                <div className="flex flex-col h-screen w-screen bg-blue-100">
+                <div className="fixed inset-0 flex flex-col bg-blue-100">
             {/* Header */}
             <header className="bg-white px-6 py-3 border-b border-gray-200 flex-shrink-0">
                 <h1 className="text-xl font-bold text-gray-900">
