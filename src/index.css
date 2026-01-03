@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply m-0 p-0 box-border;
+  }
+
+  html,
+  body,
+  #root {
+    @apply w-full h-full overflow-hidden;
+  }
+
+  body {
+    @apply bg-blue-100 font-sans antialiased;
+  }
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
